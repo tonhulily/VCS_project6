@@ -6,14 +6,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
-
     private val repo = PlaceRepository()
-
     private val _state = MutableLiveData<MainState>()
     val state: LiveData<MainState> = _state
-
     private var firstLoad = true
-
     fun loadData() {
         _state.value = MainState.Loading
 

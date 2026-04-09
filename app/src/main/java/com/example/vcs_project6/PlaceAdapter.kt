@@ -1,33 +1,32 @@
 package com.example.vcs_project6
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.vcs_project6.data.model.Place
 import com.example.vcs_project6.databinding.ItemPlaceBinding
+import androidx.core.net.toUri
 
 class PlaceAdapter : RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
-
     private val items = mutableListOf<Place>()
-
+    @SuppressLint("NotifyDataSetChanged")
     fun submitList(data: List<Place>) {
         items.clear()
         items.addAll(data)
         notifyDataSetChanged()
     }
-
     inner class ViewHolder(val binding: ItemPlaceBinding)
         : RecyclerView.ViewHolder(binding.root) {
-
         fun bind(item: Place) {
             binding.tvName.text = item.name
 
-            Glide.with(binding.img.context)
-                .load(item.imageUrl)
-                .into(binding.img)
+            binding.img.setImageResource(item.imageUrl)
+            binding.img.setOnClickListener {
+                val intent = Intent(Intent.ACTION_VIEW, item.mapUrl.toUri())
+                binding.root.context.startActivity(intent)
+            }
 
             binding.btnSave.setImageResource(
                 if (item.isSaved) R.drawable.ic_heart_filled
@@ -36,12 +35,7 @@ class PlaceAdapter : RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
 
             binding.btnSave.setOnClickListener {
                 item.isSaved = !item.isSaved
-                notifyItemChanged(adapterPosition)
-            }
-
-            binding.btnExplore.setOnClickListener {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(item.mapUrl))
-                binding.root.context.startActivity(intent)
+                notifyItemChanged(bindingAdapterPosition)
             }
         }
     }

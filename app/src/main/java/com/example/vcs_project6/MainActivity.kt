@@ -26,20 +26,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         observe()
-
         viewModel.loadData()
     }
 
     private fun observe() {
         viewModel.state.observe(this) { state ->
             when (state) {
-
                 is MainState.Loading -> {
                     binding.loading.visibility = View.VISIBLE
                     binding.errorLayout.visibility = View.GONE
                     binding.recyclerView.visibility = View.GONE
                 }
-
                 is MainState.Success -> {
                     binding.loading.visibility = View.GONE
                     binding.errorLayout.visibility = View.GONE
@@ -47,7 +44,6 @@ class MainActivity : AppCompatActivity() {
 
                     adapter.submitList(state.data)
                 }
-
                 is MainState.Error -> {
                     binding.loading.visibility = View.GONE
                     binding.errorLayout.visibility = View.VISIBLE
