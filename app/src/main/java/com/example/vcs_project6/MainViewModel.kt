@@ -15,7 +15,7 @@ class MainViewModel : ViewModel() {
 
         viewModelScope.launch {
             try {
-                delay(1500)
+                delay(500)
 
                 if (firstLoad) {
                     firstLoad = false
