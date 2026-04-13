@@ -27,6 +27,7 @@ class PlaceAdapter : RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
                 val intent = Intent(Intent.ACTION_VIEW, item.mapUrl.toUri())
                 binding.root.context.startActivity(intent)
             }
+            binding.img.contentDescription = item.name
 
             binding.btnSave.setImageResource(
                 if (item.isSaved) R.drawable.ic_heart_filled

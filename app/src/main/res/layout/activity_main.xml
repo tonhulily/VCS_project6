@@ -7,13 +7,14 @@
         android:layout_height="match_parent">
 
         <TextView
-    	   android:text="Khám phá Hà Nội"
+    	   android:text="@string/app_title"
            android:textSize="26sp"
     	   android:textStyle="bold"
     	   android:textColor="#FFFFFF"
     	   android:layout_width="match_parent"
     	   android:layout_height="wrap_content"
     	   android:paddingStart="12dp"
+	   android:paddingEnd="12dp"
            android:paddingTop="16dp"/>
 
 	<LinearLayout
@@ -21,21 +22,21 @@
     	   android:layout_width="wrap_content"
     	   android:layout_height="wrap_content"
     	   android:paddingStart="12dp"
+	   android:paddingEnd="12dp"
     	   android:paddingBottom="8dp"
     	   android:gravity="center_vertical">
 
     	   <TextView
-           	android:text="Chạm để khám phá Hà Nội theo cách của bạn"
-           	android:textSize="14sp"
-           	android:textColor="#FFFFFF"
-           	android:layout_width="wrap_content"
-           	android:layout_height="wrap_content"/>
-
-    	   <ImageView
-           	android:src="@drawable/explore"
-           	android:layout_width="24dp"
-           	android:layout_height="24dp"
-        	android:layout_marginStart="4dp"/>
+    		android:text="@string/desc_explore"
+    		android:textSize="14sp"
+    		android:textColor="#FFFFFF"
+    		android:drawableEnd="@drawable/explore"
+    		android:drawablePadding="6dp"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingStart="12dp"
+    		android:paddingEnd="12dp"
+    		android:paddingBottom="8dp"/>
 	</LinearLayout>
 
         <FrameLayout
@@ -55,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
-                    android:text="Có lỗi xảy ra. Vui lòng thử lại."
+                    android:text="@string/error_message"
                     android:textColor="#ffffff"
 		    android:textSize="24sp"
         	    android:layout_marginBottom="16dp"
@@ -64,7 +65,7 @@
 
                 <Button
                     android:id="@+id/btnRetry"
-                    android:text="Thử lại"
+                    android:text="@string/retry"
 		    android:textColor="#FFFFFF"
         	    android:background="@drawable/bg_button"
         	    android:paddingHorizontal="20dp"

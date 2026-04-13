@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">VCS_project6</string>
+    <string name="place_image">Ảnh địa điểm</string>
+    <string name="save_place">Lưu địa điểm</string>
+    <string name="app_title">Khám phá Hà Nội</string>
+    <string name="desc_explore">Chạm để khám phá Hà Nội theo cách của bạn</string>
+    <string name="error_message">Có lỗi xảy ra. Vui lòng thử lại.</string>
+    <string name="retry">Thử lại</string>
+    <string name="icon_explore_desc">Khám phá</string>
 </resources>

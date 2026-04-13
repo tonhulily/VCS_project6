@@ -11,6 +11,7 @@
             android:layout_height="match_parent">
             <ImageView
                 android:id="@+id/img"
+		android:contentDescription="@string/place_image"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
@@ -34,6 +35,7 @@
             <ImageView
                 android:id="@+id/btnSave"
                 android:layout_gravity="top|end"
+		android:contentDescription="@string/save_place"
                 android:padding="10dp"
                 android:layout_width="48dp"
                 android:layout_height="48dp"/>
