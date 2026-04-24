@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+            <ImageView
+                android:id="@+id/imgDetail"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:scaleType="centerCrop"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_overlay"/>
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/ic_back"/>
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/ic_heart_outline"/>
+	</FrameLayout>
+	    <TextView
+    		android:id="@+id/tvTitle"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginStart="16dp"
+    		android:layout_marginEnd="16dp"
+    		android:layout_marginTop="20dp"
+    		android:textSize="26sp"
+    		android:textStyle="bold"
+    		android:textColor="#222222"/>
+
+	   <TextView
+    		android:id="@+id/tvSubtitle"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginStart="16dp"
+    		android:layout_marginEnd="16dp"
+    		android:layout_marginTop="8dp"
+    		android:textSize="15sp"
+    		android:textColor="#FF6F00"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_time"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"/>
+
+                <TextView
+   		    android:id="@+id/tvBestTime"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="wrap_content"
+   		    android:gravity="center"
+    		    android:textAlignment="center"
+    		    android:maxLines="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_duration"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"/>
+
+<TextView
+    android:id="@+id/tvDuration"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:maxLines="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_ticket"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"/>
+<TextView
+    android:id="@+id/tvTicket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:maxLines="2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:text="Giới thiệu"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:textColor="#222222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="#555555"
+            android:lineSpacingExtra="6dp"/>
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="20dp"
+            android:text="Xem trên bản đồ"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -5,5 +5,10 @@ data class Place(
     val name: String,
     val imageUrl: Int,
     val mapUrl: String,
+    val shortDescription: String,
+    val fullDescription: String,
+    val bestTime: String,
+    val duration: String,
+    val ticketPrice: String,
     var isSaved: Boolean = false
 )
