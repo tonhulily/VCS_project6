@@ -5,7 +5,6 @@
         android:background="@drawable/bg_gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <TextView
     	   android:text="@string/app_title"
            android:textSize="26sp"
@@ -23,9 +22,7 @@
     	   android:layout_height="wrap_content"
     	   android:paddingStart="12dp"
 	   android:paddingEnd="12dp"
-    	   android:paddingBottom="8dp"
     	   android:gravity="center_vertical">
-
     	   <TextView
     		android:text="@string/desc_explore"
     		android:textSize="14sp"

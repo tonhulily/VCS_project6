@@ -8,6 +8,7 @@ import com.example.vcs_project6.databinding.ActivityDetailBinding
 import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.databinding.DataBindingUtil
 import com.example.vcs_project6.data.model.Place
 
 class DetailActivity : AppCompatActivity() {
@@ -17,8 +18,10 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDetailBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding = DataBindingUtil.setContentView(
+            this,
+            R.layout.activity_detail
+        )
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.btnBack) { view, insets ->
             val statusBar = insets.getInsets(
@@ -42,16 +45,11 @@ class DetailActivity : AppCompatActivity() {
         val place = repo.fetchPlacesSync().find { it.id == placeId }
 
         currentPlace = place
-        updateHeartIcon()
 
         place?.let { placeData ->
+            binding.place = placeData
             binding.imgDetail.setImageResource(placeData.imageUrl)
-            binding.tvTitle.text = placeData.name
-            binding.tvSubtitle.text = placeData.shortDescription
-            binding.tvDescription.text = placeData.fullDescription
-            binding.tvBestTime.text = placeData.bestTime
-            binding.tvDuration.text = placeData.duration
-            binding.tvTicket.text = placeData.ticketPrice
+            updateHeartIcon()
 
             binding.btnMap.setOnClickListener {
                 val intent = Intent(

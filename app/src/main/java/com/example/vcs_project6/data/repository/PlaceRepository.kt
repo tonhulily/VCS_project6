@@ -23,7 +23,7 @@ class PlaceRepository {
                 R.drawable.ho_guom,
                 "https://maps.app.goo.gl/mw4bhvLuhXG6FWoz7",
                 "Trái tim của thủ đô Hà Nội",
-                "\"Hồ Gươm nằm ở trung tâm quận Hoàn Kiếm và được xem là biểu tượng nổi bật nhất của thủ đô Hà Nội. Nơi đây gắn liền với truyền thuyết vua Lê Lợi trả gươm thần cho Rùa Vàng sau khi đánh thắng giặc Minh. Xung quanh hồ có nhiều công trình nổi tiếng như Tháp Rùa, cầu Thê Húc và đền Ngọc Sơn. Đây là địa điểm lý tưởng để đi bộ, ngắm cảnh và cảm nhận nhịp sống Hà Nội.",
+                "Hồ Gươm nằm ở trung tâm quận Hoàn Kiếm và được xem là biểu tượng nổi bật nhất của thủ đô Hà Nội. Nơi đây gắn liền với truyền thuyết vua Lê Lợi trả gươm thần cho Rùa Vàng sau khi đánh thắng giặc Minh. Xung quanh hồ có nhiều công trình nổi tiếng như Tháp Rùa, cầu Thê Húc và đền Ngọc Sơn. Đây là địa điểm lý tưởng để đi bộ, ngắm cảnh và cảm nhận nhịp sống Hà Nội.",
                 "Sáng sớm hoặc tối",
                 "2 - 3 giờ",
                 "Miễn phí"

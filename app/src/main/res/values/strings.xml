@@ -7,4 +7,7 @@
     <string name="error_message">Có lỗi xảy ra. Vui lòng thử lại.</string>
     <string name="retry">Thử lại</string>
     <string name="icon_explore_desc">Khám phá</string>
+    <string name="back">Quay lại</string>
+    <string name="introduction">Giới thiệu</string>
+    <string name="view_on_map">Xem trên bản đồ</string>
 </resources>

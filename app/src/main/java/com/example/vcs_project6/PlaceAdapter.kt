@@ -21,6 +21,7 @@ class PlaceAdapter : RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Place) {
             binding.img.setImageResource(item.imageUrl)
+            binding.tvName.text = item.name
 
             binding.root.setOnClickListener {
                 val intent = Intent(
