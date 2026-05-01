@@ -155,7 +155,7 @@ class PlaceRepository {
                 R.drawable.nha_tu_hoa_lo,
                 "https://maps.app.goo.gl/UVjspP4fHwcDL6Pc6",
                 "Di tích lịch sử thời chiến",
-                "Chùa Trấn Quốc nằm trên một hòn đảo nhỏ bên Hồ Tây và được xem là ngôi chùa cổ nhất Hà Nội với lịch sử hơn 1500 năm. Đây là địa điểm tâm linh nổi tiếng thu hút cả du khách trong và ngoài nước.",
+                "Nhà tù Hỏa Lò được thực dân Pháp xây dựng vào cuối thế kỷ 19 nhằm giam giữ các chiến sĩ cách mạng Việt Nam. Ngày nay nơi đây trở thành di tích lịch sử giúp du khách hiểu rõ hơn về tinh thần đấu tranh kiên cường của dân tộc.",
                 "Ban ngày",
                 "1 - 2 giờ",
                 "50.000 VNĐ"
